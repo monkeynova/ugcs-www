@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<TITLE>Friends</TITLE>
+<!-- Changed by: Keith Peters, 10-Sep-1998 -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+esanders = new Image();
+esanders.src = "images/esanders.jpg";
+madmatt = new Image();
+madmatt.src = "images/madmatt.jpg";
+mflana01 = new Image();
+mflana01.src = "images/mflana01.jpg";
+esanders_color = new Image();
+esanders_color.src = "images/esanders_color.jpg";
+madmatt_color = new Image();
+madmatt_color.src = "images/madmatt_color.jpg";
+mflana01_color = new Image();
+mflana01_color.src = "images/mflana01_color.jpg";
+
+function do_color( str ) {
+	document[str].src = eval( str + "_color.src" );
+
+	self.status = str;
+	return true;
+}
+
+function do_blank( str ) {
+	document[str].src = eval( str + ".src" );
+}
+// end script -->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#DDAA00" LINK="#FFDD00" VLINK="#FF8800">
+<IMG SRC="images/friends.jpg">
+<HR>
+<A HREF="http://web.mit.edu/madmatt/www/" onMouseOver="do_color('madmatt')"
+	onMouseOut="do_blank('madmatt')">
+	<IMG SRC="images/madmatt.jpg" NAME="madmatt" BORDER=0>
+</A><BR>
+<A HREF="http://kepler.poly.edu/~mflana01" onMouseOver="do_color('mflana01')"
+	onMouseOut="do_blank('mflana01')">
+	<IMG SRC="images/mflana01.jpg" NAME="mflana01" BORDER=0>
+</A><BR>
+<A HREF="http://www.fas.harvard.edu/~esanders/" onMouseOver="do_color('esanders')"
+	onMouseOut="do_blank('esanders')">
+	<IMG VALIGN=MIDDLE SRC="images/esanders.jpg" NAME="esanders" BORDER=0>
+</A><BR>
+</BODY>
+</HTML>

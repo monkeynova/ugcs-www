@@ -1,0 +1,15 @@
+<script language="JavaScript" src="js/tv-progress.js"></script>
+
+<div class=fullbox>
+  <div class=header>Progress on TiVo Extraction</div>
+<script language="JavaScript">
+<!--
+for ( i = 0; i < tv_shows.length; i++ ) {
+  document.writeln( makeDiv( tv_shows[i] ) );
+}
+//-->
+</script>
+<noscript>
+Please Enable JavaScript to see this
+</noscript>
+</div>

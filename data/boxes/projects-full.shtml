@@ -1,0 +1,70 @@
+<div class=fullbox>
+<div class=header><h1>Projects</h1></div>
+<div class=full>
+<table cellpadding=4>
+<tr>
+<td align=right><a href="http://topix.net">Topx.net</a></td>
+<td>
+I'll update this when I know exactly what I'm working on at 
+The Internet's Largest News Site.
+</td>
+</tr>
+<tr>
+<td align=right><a href="http://www.winamp.com">Winamp</a></td>
+<td>
+My first contact with Nullsoft was when I was approached to port Winamp3 to Linux.
+I made a great deal of progress with it until I needed to return to other responsibilities, 
+(there's actually something available for 
+<a href="http://download.nullsoft.com/winamp/client/Winamp-0.a1-1.tgz">download</a> off of the 
+winamp.com website, though you'ld be better suited going <a href="http://genghis.winamp.com/~keith/linux/">here</a> if I've given you the password). My current responsibilities involve their next generation streaming 
+technologies.
+</td>
+</tr>
+<tr>
+<td align=right><a href="http://dmoz.org"><nobr>Open Directory Project</nobr></a><br></td>
+<td>
+I was the primary (well only) engineer responsible for dmoz.org for the last two years. I took 
+the reigns from <a href="subpage.html?friends#autumn">Autumn</a> when I join Netscape/AOL in 2000,
+and have now handed them back.
+</td>
+</tr>
+<tr>
+<td align=right><a href="http://www.technogeeks.com">Technogeeks</a><br></td>
+<td>
+I worked with a bunch of friends from school the summer before my senior year on a web contracting
+company. The company has since fallen by the wayside, but it was a wild ride.
+</td>
+</tr>
+<tr>
+<td align=right><a href="http://www.caltech.edu">CalTech</a><br></td>
+<td>
+Ah, my alma mater. How many nights did I not get enough sleep because of the workload? But through
+the pain I was forced to grow and develop, and learn how to think (something I, like everyone else
+there, was sure I already knew how to do). Not many schools out there these days take the time
+to fully crush the egos of their students, but we deserved it, and we are better for it.
+</td>
+</tr>
+<tr>
+<td align=right><a href="cs174project.html">CS 174c</a><br></td>
+<td>
+I took the computer graphics course at Caltech names CS 174. The final term was devoted to a 
+project, and I choose to implement a 1998 Siggraph paper entitles 
+<i>Appearance-Preserving Simplification</i>. The idea was to simplify a polygonal mesh with 
+standard metric based vertex elimination techniques, but to add a normal map the the reduced
+triangles, in order to make the final renderings more detailed than could be done with just
+the reduced polygons. I got as far as putting normal and texture map support into my raytracer
+from the previous terms, and got the polygon simplification accomplished. Maybe if I had a few
+more weeks I could have gotten the normal maps added to the simplification.
+</td>
+</tr>
+<tr>
+<td align=right><a href="java.html">Java Toys</a><br></td>
+<td>
+And here are a couple of toys I built for my last incarnation of a website shortly after first 
+learning Java. They can be a fun way to waste some time.
+</td>
+</tr>
+</table>
+</div>
+</div>
+

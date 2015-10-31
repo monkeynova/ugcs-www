@@ -1,0 +1,23 @@
+<div class=sidebar>
+    <!--#include virtual="boxes/me.html" -->
+    &nbsp;
+    <!--#include virtual="boxes/friends.html" -->
+    &nbsp;
+    <!--#include virtual="boxes/projects.html" -->
+    &nbsp;
+    <!--#include virtual="boxes/media.html" -->
+    &nbsp;
+    <!--#include virtual="boxes/quotes.html" -->
+    &nbsp;
+    <!--#include virtual="boxes/blog.html" -->
+    &nbsp;
+    <!--#include virtual="boxes/tv-progress.shtml" -->
+    &nbsp;
+    <!--#include virtual="boxes/innout.html" -->
+    &nbsp;
+    <!--#include virtual="boxes/neverreturn.html" -->
+    &nbsp;
+    <!--#include virtual="boxes/lit.html" -->
+    &nbsp;
+    <!--#include virtual="boxes/words.html" -->
+</div>

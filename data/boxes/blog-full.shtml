@@ -1,0 +1,33 @@
+<div class=fullbox>
+<div class=header>B-Log</div>
+<center>
+<!--#include virtual="blog/20040611.html" -->
+<!--#include virtual="blog/20040607.html" -->
+<!--#include virtual="blog/20040604.html" -->
+<!--#include virtual="blog/20040602.html" -->
+<!--#include virtual="blog/20040601.html" -->
+<!--#include virtual="blog/20040430.html" -->
+<!--#include virtual="blog/20040421.html" -->
+<!--#include virtual="blog/20040419.html" -->
+<!--#include virtual="blog/20040309.html" -->
+<!--#include virtual="blog/20040308.html" -->
+<!--#include virtual="blog/20040305.html" -->
+<!--#include virtual="blog/20040303.html" -->
+<!--#include virtual="blog/20040225.html" -->
+<!--#include virtual="blog/20031105.html" -->
+<!--#include virtual="blog/20031103.html" -->
+<!--#include virtual="blog/20031030.html" -->
+<!--#include virtual="blog/20031029.html" -->
+<!--#include virtual="blog/20031017.html" -->
+<!--#include virtual="blog/20031015.html" -->
+<!--#include virtual="blog/20031001.html" -->
+<!--#include virtual="blog/20030922.html" -->
+<!--#include virtual="blog/20030817.html" -->
+<!--#include virtual="blog/20030813.html" -->
+<!--#include virtual="blog/20030809.html" -->
+<!--#include virtual="blog/20030806.html" -->
+<!--#include virtual="blog/20030803.html" -->
+<!--#include virtual="blog/20030801.html" -->
+<!--#include virtual="blog/welcome.html"  -->
+</center>
+</div>

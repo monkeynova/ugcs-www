@@ -1,0 +1,157 @@
+body {
+  background : #fff;
+  color : #000;
+  font-size : 12px;
+  font-family : Arial;
+}
+
+a:link { color : #003 ; text-decoration  : none }
+a:visited { color : #003; text-decoration : none }
+a:hover { color : #00d ; text-decoration : none }
+
+div.box {
+  color : #000;
+  border-width : 1px; 
+  border-style : solid; 
+  border-color : #000;
+  background : #ddd;
+}
+
+div.fullbox {
+  border-width : 1px;
+  border-style : solid;
+  border-color : #000;
+  color : #000;
+  background : #ddd;
+}
+
+div.header {
+  background : #bbb;
+  font-weight : bold;
+  font-size : 14px;
+  text-align : center;
+  color : #000;
+  border-width : 1px;
+  border-style : solid;
+  border-color : #bbb;
+  top : 0px;
+}
+
+div.header a:link { color : #000 ; text-decoration  : none }
+div.header a:visited { color : #000 ; text-decoration : none }
+div.header a:hover { color : #008 ; text-decoration : none }
+
+div.info {
+  padding-top : 4px;
+  padding-left : 5px;
+  padding-right : 5px;
+}
+
+div.full {
+  color : #000;
+  font-size : 14px;
+  padding-left : 5px;
+  padding-right : 5px;
+}
+
+div.img {
+  text-align : center;
+}
+
+div.more {
+  text-align : right;
+  font-size : 10px;
+}
+
+div.more a:link { color : #f50; text-decoration : none; }
+div.more a:visited {color : #f50; text-decoration : none; }
+div.more a:hover { color : #f50; text-decoration : none; }
+
+div.quote {
+  font-style : italic;
+}
+
+div.citation {
+  text-indent : 20px;
+}
+
+tr.notvisited td.vc {
+  color : #000;
+  visibility : hidden;
+}
+
+tr.visited {
+  color : #000;
+  background : #888;
+}
+
+tr.visited td.vc {
+  text-align : center;
+  font-weight : bold;
+}
+
+div.sidebar {
+  position : fixed; 
+  top : 10px; 
+  left : 10px; 
+  width : 100px
+}
+
+div.submain {
+  position : absolute; 
+  left : 120px; 
+  top : 10px; 
+  right : 10px; 
+  padding-bottom : 10px;
+}
+
+div.writtenword {
+  font-size : 13px;
+}
+
+div.poem {
+  float : left;
+  padding : 5px;
+  white-space : pre;
+}
+
+div.poemgroup {
+  clear : both;
+}
+
+div.poemgroup h2 {
+  text-indent : 5px; 
+}
+
+div.showbox {
+  color : #000;
+  font-size : 14px;
+  padding : 5px;
+}
+
+div.pbar {
+  position : relative;
+  background : #aaf;
+  border-width : 1px;
+  border-style : solid;
+  border-color : #000;
+  width : 200px;
+}
+
+div.progresspercent {
+  text-align : center;
+  position : absolute;
+  left : 0; top : 0; width : 100%; height : 100%;
+}
+
+div.progress {
+  position : absolute;
+  left : 0px;
+  top : 0px;
+  height : 100%;
+  background : #44a;
+}
+
+table.contact {
+  color : #000;
+}

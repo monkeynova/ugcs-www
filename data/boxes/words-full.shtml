@@ -1,0 +1,49 @@
+<script language="JavaScript">
+<!--
+function printWordsTable()
+{
+  var Words = new Array();
+
+  var i = 0; 
+  Words[i++] = new Array( "Feb-24-2004", "Symbiosis", "Dromedary" );
+  Words[i++] = new Array( "Feb-25-2004", "Contrite", "Contiguous" );
+  Words[i++] = new Array( "Feb-26-2004", "Taciturn", "Ubiquitous" );
+  Words[i++] = new Array( "Feb-27-2004", "Cachinnate", "Benighted" );
+  Words[i++] = new Array( "Mar-1-2004", "Hypnagogic", "Halcyon" ); 
+  Words[i++] = new Array( "Mar-2-2004", "Insipid", "Tirade" );
+  Words[i++] = new Array( "Mar-11-2004", "Recidivism", "Quixotic" );
+
+  for( i = 0; i < Words.length; i++ )
+  {
+    document.writeln( "<tr>" );
+    document.writeln( "<td>" + Words[i][0] + "</td>" );
+    for( j = 1; j < Words[i].length; j++ )
+    {
+      document.writeln( "<td><a href=\"http://dictionary.reference.com/search?q="  + Words[i][j] + "\">" + Words[i][j] + "</a></td>" );
+    }
+    document.writeln( "</tr>" );
+}
+}
+//-->
+</script>
+<div class=fullbox>
+<div class=header><h1>Words of the Day</h1></div>
+<div class=full>
+Here is where I'm going to keep track of the words I'm going to add to 
+my vocabulary
+<table>
+  <tr>
+    <th>Day</th><th>Keith's Word</th><th>Kelly's Word</th>
+  </tr>
+<script language="Javascript">
+<!--
+printWordsTable();
+//-->
+</script>
+</table>
+<p>
+Ideas for future words:
+<ul>
+</ul>
+</div>
+</div>

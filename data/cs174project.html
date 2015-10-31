@@ -1,0 +1,43 @@
+<HTML>
+<HEAD><TITLE>My 174 Project</TITLE></HEAD>
+<BODY>
+<CENTER>
+<H1> Project for CS 174c - Spring 1999 </H1>
+</CENTER>
+<P><B>My tar file is available <A HREF="tarballs/project.tgz">here</A></B>
+<P>
+<H2><B> Abstract </B></H2><BR>
+For my project I will be duplicating the work of Jonathan Cohen,
+Marc Olano, Dinesh Manocha in their 1998 Siggraph paper entitled
+<I>Appearance-Preserving Simplification</I>. Their work involves
+mesh simplification (includng normal maps), based on a new algorithm
+to determin the "correctness" of the simplification. This new
+algorithm is based on the actual screen upon which the mesh is to be
+rendered, and simply uses color, and displacement to determin accuract.
+<HR>
+<H2><B> Proposed Schedule </B></H2><BR>
+<UL>
+<LI><B>Week 1</B> - Modify my renderer to deal well with the triangle meshes,
+including texture and normal maps.
+<LI><B>Weeks 2-3</B> - Get the mesh simplification working without texture/normal maps
+<LI><B>Weeks 4-5</B> - Add texture/normal maps
+<LI><B>Any remaining time</B> - Get meshes and play with it.
+</UL>
+<HR>
+<H2><B> Progress </B></H2><BR>
+Renderer Modification:<BR>
+I have now gotten Texture and Normal maps working from within my renderer.
+It was slightly more complicated than I had expected due toi the fact that getting a coordinate system on each triangle required a bit of play with the 
+vectors defining the triangle.<BR>
+<H2>Hear is an example of Texture mapping:</H2><BR>
+<IMG SRC="images/testtext.gif"><BR>
+<H2>And one of normal maps:</H2><BR>
+<IMG SRC="images/testnorm.gif"><BR>
+<H2> Here are some simplification wireframes </H2>
+<IMG SRC="images/bigcow.gif"><BR>
+<IMG SRC="images/big-bones.gif"><BR>
+<HR>
+Contact me at 
+<A HREF="mailto:peters@ugcs.caltech.edu">peters@ugcs.caltech.edu</A>
+<
+

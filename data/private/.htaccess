@@ -1,0 +1,6 @@
+AuthUserFile /home/peters/.htpasswd
+AuthName "Keith's web Page"
+AuthType Basic
+<Limit GET>
+  require valid-user
+</Limit>

@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript" SRC="menuDude.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"><!--
+species = new Array( 14 );
+species[0] = new menuElement( 'vei', 'images/pch_search_veiled.gif' );
+species[1] = new menuElement( 'jac', 'images/pch_search_jackson.gif' );
+species[2] = new menuElement( 'mou', 'images/pch_search_mtn.gif' );
+species[3] = new menuElement( 'flj', 'images/pch_search_flapjack.gif' );
+species[4] = new menuElement( 'fis', 'images/pch_search_fischer.gif' );
+species[5] = new menuElement( 'fla', 'images/pch_search_flapneck.gif' );
+species[6] = new menuElement( 'mel', 'images/pch_search_meller.gif' );
+species[7] = new menuElement( 'pan', 'images/pch_search_panther.gif' );
+species[8] = new menuElement( 'gou', 'images/pch_search_giant.gif' );
+species[9] = new menuElement( 'gsp', 'images/pch_search_gspiny.gif');
+species[10] = new menuElement( 'car', 'images/pch_search_carpet.gif' );
+species[11] = new menuElement( 'fou', 'images/pch_search_four.gif' );
+species[12] = new menuElement( 'two', 'images/pch_search_two.gif' );
+species[13] = new menuElement( '', 'images/pch_search_not.gif' );
+speciesMenu = new menuDude( 'species', 'images/pch_search_species.gif', species, document );
+
+breeding = new Array( 3 )
+breeding[0] = new menuElement( 'captive', 'images/pch_search_captive.gif' );
+breeding[1] = new menuElement( 'wild', 'images/pch_search_wild.gif' );
+breeding[2] = new menuElement( '', 'images/pch_search_not.gif' );
+breedingMenu = new menuDude( 'breeding', 'images/pch_search_breeding.gif', breeding, document );
+
+sex = new Array( 3 );
+sex[0] = new menuElement( 'male', 'images/pch_search_male.gif' );
+sex[1] = new menuElement( 'female', 'images/pch_search_female.gif' );
+sex[2] = new menuElement( '', 'images/pch_search_not.gif' );
+sexMenu = new menuDude( 'sex', 'images/pch_search_gender.gif', sex, document );
+
+age = new Array( 5 );
+age[0] = new menuElement( '1', 'images/pch_search_06.gif' );
+age[1] = new menuElement( '2', 'images/pch_search_612.gif' );
+age[2] = new menuElement( '3', 'images/pch_search_1218.gif' );
+age[3] = new menuElement( '4', 'images/pch_search_18.gif' );
+age[4] = new menuElement( '', 'images/pch_search_not.gif' );
+ageMenu = new menuDude( 'age', 'images/pch_search_age.gif', age, document );
+
+function showLayer( name ) {
+  document[ name + "Layer" ].visibility = "show";
+  currLayer = name;
+}
+function hideLayer( name ) {
+  document[ name + "Layer" ].visibility = "hide";
+  currLayer = "";
+}
+var baseDoc;
+function setBaseDoc( doc ) {
+  baseDoc = doc;
+}
+function setImage( src, dest ) {
+  baseDoc[ src + "Main" ].src = dest;
+}
+function setSearcher( src, name ) {
+  baseDoc.searchform[ src ].value = name;
+}
+
+//--></SCRIPT>
+<TITLE>Test Menu Program</TITLE>
+</HEAD>
+<BODY>
+<LAYER NAME="mainLayer" VISIBILITY="SHOW">
+<H2> mainLayer </H2>
+<TABLE>
+<TR>
+<TD>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD><A HREF="" onClick='showLayer("species");return false;'><IMG SRC="images/pch_search_species.gif" NAME="speciesMain" BORDER=0></A></TD>
+<TD><A HREF="" onClick='showLayer("species");return false;'><IMG SRC="images/pch_search_tri.gif" BORDER=0></A></TD></TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD><A HREF="" onClick='showLayer("breeding");return false;'><IMG SRC="images/pch_search_breeding.gif" NAME="breedingMain" BORDER=0></A></TD>
+<TD><A HREF="" onClick='showLayer("breeding");return false;'><IMG SRC="images/pch_search_tri.gif" BORDER=0></A></TD></TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD><A HREF="" onClick='showLayer("sex");return false;'><IMG SRC="images/pch_search_gender.gif" NAME="sexMain" BORDER=0></A></TD>
+<TD><A HREF="" onClick='showLayer("sex");return false;'><IMG SRC="images/pch_search_tri.gif" BORDER=0></A></TD></TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD><A HREF="" onClick='showLayer("age");return false;'><IMG SRC="images/pch_search_age.gif" NAME="ageMain" BORDER=0></A></TD>
+<TD><A HREF="" onClick='showLayer("age");return false;'><IMG SRC="images/pch_search_tri.gif" BORDER=0></A></TD></TR>
+</TABLE>
+</TD>
+
+<TD>
+<FORM ACTION="http://pcherp/cgi-bin/check.cgi" NAME="searchform" METHOD=GET>
+<INPUT TYPE=HIDDEN NAME=species VALUE="">
+<INPUT TYPE=HIDDEN NAME=breeding VALUE="">
+<INPUT TYPE=HIDDEN NAME=sex VALUE="">
+<INPUT TYPE=HIDDEN NAME=age VALUE="">
+<INPUT TYPE=SUBMIT>
+</FORM>
+</TD>
+</TR>
+</TABLE>
+<SCRIPT LANGUAGE="JavaScript"><!--
+setBaseDoc( document);
+//--></SCRIPT>
+</LAYER>
+
+<LAYER BELOW="mainLayer" NAME="speciesLayer" VISIBILITY="HIDE" LEFT=13 TOP=66>
+<SCRIPT LANGUAGE="JavaScript"><!--
+speciesMenu.write( document );
+//--></SCRIPT>
+</LAYER>
+
+<LAYER BELOW="mainLayer" NAME="breedingLayer" VISIBILITY="HIDE" LEFT=159 TOP=66>
+<SCRIPT LANGUAGE="JavaScript"><!--
+breedingMenu.write( document );
+//--></SCRIPT>
+</LAYER>
+
+<LAYER BELOW="mainLayer" NAME="sexLayer" VISIBILITY="HIDE" LEFT=305 TOP=66>
+<SCRIPT LANGUAGE="JavaScript"><!--
+sexMenu.write( document );
+//--></SCRIPT>
+</LAYER>
+
+<LAYER BELOW="mainLayer" NAME="ageLayer" VISIBILITY="HIDE" LEFT=451 TOP=66>
+<SCRIPT LANGUAGE="JavaScript"><!--
+ageMenu.write( document );
+//--></SCRIPT>
+</LAYER>
+
+
+</BODY>
+</HTML>

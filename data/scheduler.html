@@ -1,0 +1,65 @@
+<HTML>
+  <HEAD>
+    <TITLE> Scheduler 1st Term 98-99 </TITLE>
+    
+    <SCRIPT Language="JavaScript">
+      
+      <!--
+      function addToList( string ) {
+      var tmp = document.mainform.ta;
+      if ( string != "" ) {
+        if ( tmp.value == "" )
+          tmp.value = string;
+        else
+          tmp.value = tmp.value + "\n" + string;
+        }
+      }
+      
+      //-->
+      
+    </SCRIPT>
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF">
+    <H2> The Scheduler </H2>
+    Here is a nifty cgi script that will create a schedule for you in a
+    usable format. <BR>
+    To use it, just type in your classes, seperated by new-lines, following the
+    example...<BR>
+    <PRE>
+CS 174a
+CS 117a
+CS 140a
+CS 141a
+Art 103
+#Lunch MTWThF12 Ricketts
+#Dinner MTWThF6 Ricketts
+    </PRE>
+    <HR>
+    <FORM ACTION="/cgi-bin/make_sched.pl"
+      NAME="mainform"
+      METHOD="POST">
+      <TABLE>
+	<TR>
+	  <TD>
+	    <TEXTAREA NAME="ta" COLS=20 ROWS=10 ALIGN=LEFT></TEXTAREA>
+	    <INPUT TYPE="SUBMIT" VALUE="Show Me">
+	    <BR>
+	  </TD>
+	  <TD>
+	    <SELECT NAME=courses 
+	      OnChange="addToList( this.options[ this.selectedIndex ].value )"
+	      ALIGN=RIGHT>
+	      <OPTION VALUE="CS 174b">CS 174b
+	      <OPTION VALUE="CS 117B">CS 117b
+	      <OPTION VALUE="Ma 5b">Ma 5b
+	    </SELECT>
+	  </TD>
+	</TR>	
+      </TABLE>
+    </FORM>
+    <HR>
+    Information comes from this <A HREF="rawdata.html">schedule</A>.<P>
+      Questions or comments can be sent to <A HREF="mailto:peters@ugcs.caltech.edu">
+	me.</A>
+  </BODY>
+</HTML>
